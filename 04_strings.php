@@ -3,7 +3,7 @@
 // Create simple string
 $name = 'Stan';
 
-$string = 'Wassup ' . $name . ' the php developer';
+$string = 'Wassup ' . $name;
 $string2 = "Wassup $name";
 
 echo $string . '<br>';
@@ -26,9 +26,9 @@ echo "8 - " . strtolower($string) . '<br>' . PHP_EOL;
 echo "9 - " . ucfirst('hello') . '<br>' . PHP_EOL;
 echo "10 - " . lcfirst('HELLO') . '<br>' . PHP_EOL;
 echo "11 - " . ucwords('hello world') . '<br>' . PHP_EOL;
-echo "12 - " . strpos($string, 'world') . '<br>' . PHP_EOL; // Change into world
-echo "13 - " . stripos($string, 'world') . '<br>' . PHP_EOL;
-echo "14 - " . substr($string, 8) . '<br>' . PHP_EOL;
+echo "12 - " . strpos($string, 'World') . '<br>' . PHP_EOL; // searches for world inside $string. case sensitive
+echo "13 - " . stripos($string, 'hello') . '<br>' . PHP_EOL;
+echo "14 - " . substr($string, 8) . '<br>' . PHP_EOL; // take out substring from position 8 until end.
 echo "15 - " . str_replace('World', 'PHP', $string) . '<br>' . PHP_EOL;
 echo "16 - " . str_ireplace('world', 'PHP', $string) . '<br>' . PHP_EOL;
 
